@@ -1,0 +1,39 @@
+.navbar-custom
+{
+    background-color:rgba(77, 24, 24, 1);
+    border-style: solid;
+    border-color:brown ;
+    opacity: 1;
+    margin-left: 50px;
+}
+
+.nav_text_color
+{
+    color:white;
+}
+body{
+    background-image: url(../static/collage2.jpg),url(../static/collage.jpg);
+    background-position: center,center;
+    z-index: -1,1;
+    background-repeat: no-repeat,no-repeat;
+    background-size: contain,cover;
+    height:100vh;
+    backdrop-filter:blur(1.5px);
+}
+
+.row-2
+{
+text-align: center;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background:rgb(0, 0, 0,0.7);/* Black background with 0.5 opacity */
+color:white;
+margin-top: 200px;
+margin-left: 20px;
+border-radius: 10px;
+border-color:rgb(0, 0, 0,0.7);
+border-style:solid;
+border-width: 2px;
+padding: 10px;
+}
+
+ 

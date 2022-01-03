@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Predictor</title>
+    <link rel="icon" href="static/unnamed.png" type="image/png">
+    <link rel="stylesheet" href="../static/style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="../project/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<style>
+.navbar-custom
+  {
+      background-color:rgb(0, 0, 0);
+      border-style: solid;
+      border-color:rgb(0, 0, 0) ;
+      opacity: 1;
+      margin-left: 50px;
+  }
+  
+  .nav_text_color
+  {
+      color:white;
+  }
+  body{
+      background-image: url(../static/collage2.jpg),url(../static/collage.jpg);
+      background-position: center,center;
+      z-index: -1,1;
+      background-repeat: no-repeat,no-repeat;
+      background-size: contain,cover;
+      height:100vh;
+      backdrop-filter:blur(2px);
+  }
+  
+  .row-2
+  {
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background:rgba(0, 0, 0,1);/* Black background with 0.5 opacity */
+  color:white;
+  margin-top: 200px;
+  margin-left: 250px;
+  border-radius: 10px;
+  border-color:rgb(0, 0, 0);
+  border-style:solid;
+  border-width: 2px;
+  padding: 10px;
+  max-width: 600px;
+  padding-top: 20px;
+  }
+  
+   </style>
+<body>
+  
+<div class="container">
+  <div class="row">
+    <div class="column">
+      
+      <nav class="navbar navbar-custom navbar-right">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="http://127.0.0.1:5000" class="nav_text_color">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+      <div class="row-2">
+        <div class="col">
+        <div>
+          <p> For the given season, it seems like {{result}} is the most profitable crop in your region with profit of Rs {{profit}}/-.</p>
+        </div>
+      </div>
+      </div>
+</div>
+      
+</div>    
+</body>
+</html>
